@@ -22,6 +22,10 @@ function loadMore() {
   LoadMore.disable();
   fetchImg(inputValue, page).then(({ hits }) => {
     renderSearchResult(hits);
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+    });
     LoadMore.enable();
     page += 1;
   });
