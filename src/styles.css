@@ -99,18 +99,10 @@ img {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 75%;
+  top: 83%;
   left: 43px;
 
   display: none;
-}
-
-.media {
-  padding: 8px;
-}
-
-.media .description {
-  margin: 0;
 }
 
 .material-icons,
