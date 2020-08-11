@@ -20,6 +20,7 @@ function searchFormSubmit(event) {
 }
 function loadMore() {
   LoadMore.disable();
+
   fetchImg(inputValue, page).then(({ hits }) => {
     renderSearchResult(hits);
     window.scrollTo({
